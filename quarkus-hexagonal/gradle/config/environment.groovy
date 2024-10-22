@@ -1,0 +1,22 @@
+desc_project{
+    type="app-docker"
+    withDocker=true
+    withQuarkus=true
+    version{
+        majorVersion=11
+        mediumVersion=1
+        minorVersion=0
+    }
+    artefact{
+        group="fr.lixtec.article"
+        project="quarkus-hexagonal"
+        projectKey="${group}:${project}"
+    }
+}
+
+pic{
+    channel="lixtec"
+	git{
+	    uri="https://github.com/lixtec/quarkus-hexagonal.git"
+	}
+}
